@@ -12,8 +12,10 @@ class Products {
   });
 
 
-
   static List<Products> products = [
-    const Products(name: 'Пельмени с кроликом ', photo: "", price: 180, category: 'Пельмени'),
+    const Products(name: 'Пельмени с курицей-индейкой  ', photo: "assets/images/products/Kyritsa-indeyka.png", price: 180, category: 'Пельмени'),
+    const Products(name: 'Пельмени с курицей',photo: "assets/images/products/Kyritsa.png",price:210,category: 'Пельмени'),
+    const Products(name: 'Пельмени свинина-телятина',photo: "assets/images/products/Svinina-tel.png",price:210,category: 'Пельмени'),
+
   ];
 }

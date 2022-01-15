@@ -90,6 +90,12 @@ flutter:
     - family: Belsamiq-Regular
       fonts:
         - asset: assets/fonts/BalsamiqSans-Regular.ttf
+    - family: TTNorms-Medium
+      fonts:
+        - asset: assets/fonts/TTNorms-Medium.ttf
+    - family: TTNorms-Regular
+      fonts:
+        - asset: assets/fonts/TTNorms-Regular.ttf
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
