@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "293730379535",
+    "project_id": "pelmeny-7dca2",
+    "storage_bucket": "pelmeny-7dca2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293730379535:android:3a1f1f38434440b605807a",
+        "android_client_info": {
+          "package_name": "com.pelmeniy_czech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293730379535-mmqricenajtvvpgfqhhe71jbna57jm4n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pelmeniy_czech",
+            "certificate_hash": "a1639a0e591db8feb5c70b1880ce59cded9709f5"
+          }
+        },
+        {
+          "client_id": "293730379535-i508lt32g0tudhmq3mc8sikn0oqemml3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB2K7iNX0dRM-xYVYm2a8JxgTcKCKmPSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293730379535-i508lt32g0tudhmq3mc8sikn0oqemml3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
