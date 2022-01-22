@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Pelmen Demo',
+
       onGenerateRoute: AppRouter.onGenerateRoute,
       initialRoute: HomePage.routeName,
 
