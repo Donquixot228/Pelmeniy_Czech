@@ -31,13 +31,13 @@ class Product {
     ),
     const Product(
       name: 'Пельмени с курицей',
-      photo: "assets/images/products/Kyritsa.png",
+      photo: asset+'kyr.jpg',
       price: 210.00,
       category: 'Пельмени',
     ),
     const Product(
       name: 'Пельмени свинина-телятина',
-      photo: "assets/images/products/Svinina-tel.png",
+      photo: asset+'svin-tel.jpg',
       price: 210.00,
       category: 'Пельмени',
     ),

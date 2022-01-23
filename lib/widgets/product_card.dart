@@ -1,4 +1,4 @@
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pelmeniy_czech/blocs/cart/cart_bloc.dart';
@@ -12,7 +12,6 @@ class ProductCard extends StatelessWidget {
 
   const ProductCard({
     required this.product,
-
     this.widthFactor = 2.5,
     this.leftPosition = 5,
     this.isWishlist = false,
@@ -85,35 +84,36 @@ class ProductCard extends StatelessWidget {
                   ),
                   BlocBuilder<CartBloc, CartState>(
                     builder: (context, state) {
-                        return Expanded(
-                          child: IconButton(
-                            onPressed: () {
-                              context
-                                  .read<CartBloc>()
-                                  .add(CartProductAdd(product));
-                              final snackBar = SnackBar(
-                                content: Text('Added to cart'),
-                                duration: Duration(seconds: 1),
-                                action: SnackBarAction(
-                                  label: '',
-                                  textColor: Colors.white,
-                                  onPressed: () {},
-                                ),
-                                behavior: SnackBarBehavior.floating,
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(24),
-                                ),
-                                backgroundColor: Colors.blue,
-                              );
-                              ScaffoldMessenger.of(context).showSnackBar(snackBar);
-                            },
-                            icon: Icon(
-                              Icons.add_circle,
-                              color: Colors.white,
-                              size: 30,
-                            ),
+                      return Expanded(
+                        child: IconButton(
+                          onPressed: () {
+                            context
+                                .read<CartBloc>()
+                                .add(CartProductAdd(product));
+                            final snackBar = SnackBar(
+                              content: Text(
+                                'Добавлено в корзину',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(fontFamily: "TTNorms-Regular",
+                                fontSize: 20),
+                              ),
+                              duration: Duration(seconds: 1),
+                              behavior: SnackBarBehavior.floating,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              backgroundColor: Colors.pink,
+                            );
+                            ScaffoldMessenger.of(context)
+                                .showSnackBar(snackBar);
+                          },
+                          icon: Icon(
+                            Icons.add_circle,
+                            color: Colors.white,
+                            size: 30,
                           ),
-                        );
+                        ),
+                      );
                     },
                   ),
                 ],

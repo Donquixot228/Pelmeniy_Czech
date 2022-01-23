@@ -11,7 +11,7 @@ import 'package:rive/rive.dart';
 class HomePage extends StatelessWidget {
   const HomePage();
 
-  static const String routeName = '/';
+  static const String routeName = '/home';
 
   static Route route() {
     return MaterialPageRoute(

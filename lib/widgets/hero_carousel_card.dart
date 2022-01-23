@@ -53,7 +53,6 @@ class HeroCarouselCard extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.white,
-
                       fontFamily: 'TTNorms-Medium',
                     ),
                   ),

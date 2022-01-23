@@ -29,7 +29,7 @@ class CustomNavBarr extends StatelessWidget {
         children: [
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, '/');
+              Navigator.pushNamed(context, '/home');
             },
             icon: Icon(
               Icons.home,
