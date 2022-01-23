@@ -1,6 +1,19 @@
 part of 'cart_bloc.dart';
 
-@immutable
-abstract class CartState {}
+enum CartStatus { empty, full }
 
-class CartInitial extends CartState {}
+class CartState {
+  final Cart cart;
+  final CartStatus status;
+
+  CartState({
+    this.cart = const Cart(),
+    this.status = CartStatus.empty,
+  });
+
+  CartState copyWith({CartStatus? status}) {
+    return CartState(
+      status: status ?? this.status,
+    );
+  }
+}

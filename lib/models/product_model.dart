@@ -3,7 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class Product {
   final String name;
   final String photo;
-  final String price;
+  final double price;
   final String category;
 
   const Product({
@@ -21,23 +21,24 @@ class Product {
     );
     return product;
   }
+  static const String asset = 'assets/images/products/';
   static List<Product> products = [
     const Product(
-      name: 'Пельмени с курицей-индейкой  ',
-      photo: "assets/images/products/Kyritsa-indeyka.png",
-      price: '\u{20B4} 120.00',
+      name: 'Пельмени с курицей-индейкой ',
+      photo: asset+'kyr-ind.jpg',
+      price:  120.00,
       category: 'Пельмени',
     ),
     const Product(
       name: 'Пельмени с курицей',
       photo: "assets/images/products/Kyritsa.png",
-      price: '\u{20B4} 210.00',
+      price: 210.00,
       category: 'Пельмени',
     ),
     const Product(
       name: 'Пельмени свинина-телятина',
       photo: "assets/images/products/Svinina-tel.png",
-      price: '\u{20B4} 210.00',
+      price: 210.00,
       category: 'Пельмени',
     ),
   ];

@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:pelmeniy_czech/models/models.dart';
 import 'package:pelmeniy_czech/pages/pages.dart';
 
 class AppRouter{
@@ -10,7 +11,8 @@ class AppRouter{
     switch (settings.name){
       case HomePage.routeName:
         return HomePage.route();
-
+      case CatalogPage.routeName:
+        return CatalogPage.route(category: settings.arguments as Category);
       default:
         return _errorRoute();
     }

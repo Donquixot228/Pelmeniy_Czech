@@ -23,7 +23,6 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
@@ -70,6 +69,7 @@ class HomePage extends StatelessWidget {
                       //INITIAL
                       initialPage: 1,
                       autoPlay: true,
+
                       //AUTOPLAY
                     ),
                     items: Category.categories

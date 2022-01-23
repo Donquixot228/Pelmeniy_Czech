@@ -5,31 +5,26 @@ import 'package:pelmeniy_czech/resources/resources.dart';
 import 'package:rive/rive.dart';
 
 class CustomAppBar extends StatelessWidget {
+  final String text;
+
   const CustomAppBar({
+    this.text = '#Пельменный цех',
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: kToolbarHeight +40,
-      child: Padding(
-        padding: const EdgeInsets.only(left: 10),
-        child: Row(
-          children: [
-            SizedBox(
-              width: MediaQuery.of(context).size.width * 0.10,
-            ),
-            Neon(
-              text: '#Пельменный цех',
-              color: Colors.pink,
-              flickeringText: false,
-              flickeringLetters: [0, 12],
-              font: NeonFont.Samarin,
-              blurRadius: 20,
-              fontSize: 35,
-            ),
-          ],
+      height: kToolbarHeight + 40,
+      child: Center(
+        child: Neon(
+          text: text,
+          color: Colors.pink,
+          flickeringText: false,
+          flickeringLetters: [0, 12],
+          font: NeonFont.Samarin,
+          blurRadius: 20,
+          fontSize: 35,
         ),
       ),
     );
